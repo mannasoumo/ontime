@@ -1,7 +1,17 @@
-const HomePage = (props) => {
-	return (
-		<div><h1>Home Page</h1></div>
-	);
+import React from 'react';
+import AppHero from '../components/home/hero';
+import AppAbout from '../components/home/about';
+import AppFaq from '../components/home/faq';
+import AppContact from '../components/home/contact';
+function Home() {
+  return (
+    <div className="main">
+      <AppHero/>
+      <AppAbout/>
+      <AppFaq/> 
+      <AppContact/>
+    </div>
+  );
 }
 
-export default HomePage;
+export default Home;

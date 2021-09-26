@@ -3,9 +3,8 @@ import { useLocation, Switch, Route } from "react-router-dom"
 
 import Navbar from "../components/navbar";
 import HomePage from "../pages/home";
-import ContactUsPage from "../pages/contact-us";
-import AboutUsPage from "../pages/about-us";
-
+import Login from "../pages/Login";
+import SignIn from "../pages/SignIn";
 const { Header, Content } = Layout;
 
 const DefaultLayout = (props) => {
@@ -21,11 +20,11 @@ const DefaultLayout = (props) => {
 					<Route exact path="/">
 						<HomePage />
 					</Route>
-					<Route exact path="/about">
-						<AboutUsPage />
+					<Route exact path="/Login">
+						<Login />
 					</Route>
-					<Route exact path="/contact">
-						<ContactUsPage />
+					<Route exact path="/SignIn">
+						<SignIn />
 					</Route>
 					<Route path="*">
 						404

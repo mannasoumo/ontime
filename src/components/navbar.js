@@ -5,7 +5,6 @@ import { Menu, Button, Drawer, Row, Col } from "antd";
 import {
 	FieldTimeOutlined,
 	HomeOutlined,
-	InfoCircleOutlined,
 	ContactsOutlined,
 	MenuOutlined,
 } from "@ant-design/icons";
@@ -100,22 +99,16 @@ const Navbar = () => {
 					>
 						<Link to="/">Home</Link>
 					</Menu.Item>
-					<Menu.Item
-						key="about"
-						icon={<InfoCircleOutlined />}
-						style={menuItemStyle}
-					>
-						<Link to="/about">About Us</Link>
-					</Menu.Item>
+					
 					<Menu.Item
 						key="contact"
 						icon={<ContactsOutlined />}
 						style={menuItemStyle}
 					>
-						<Link to="/contact">Conatct Us</Link>
+						<Link to="/Login">Login</Link>
 					</Menu.Item>
 					<Menu.Item key="btn" style={menuItemStyle}>
-						<Button type="primary" shape="round" style={signInButtonStyle}>
+						<Button href="/SignIn" type="primary" shape="round" style={signInButtonStyle}>
 							Sign in
 						</Button>
 					</Menu.Item>
@@ -182,22 +175,16 @@ const Navbar = () => {
 							>
 								<Link to="/">Home</Link>
 							</Menu.Item>
-							<Menu.Item
-								key="about"
-								icon={<InfoCircleOutlined />}
-								style={menuItemStyle}
-							>
-								<Link to="/about">About Us</Link>
-							</Menu.Item>
+							
 							<Menu.Item
 								key="contact"
 								icon={<ContactsOutlined />}
 								style={menuItemStyle}
 							>
-								<Link to="/contact">Conatct Us</Link>
+							<Link to="/Login">Login</Link>
 							</Menu.Item>
 							<Menu.Item key="btn" style={menuItemStyle}>
-								<Button type="primary" shape="round" style={signInButtonStyle}>
+								<Button href="/SignIn" type="primary" shape="round" style={signInButtonStyle}>
 									Sign in
 								</Button>
 							</Menu.Item>

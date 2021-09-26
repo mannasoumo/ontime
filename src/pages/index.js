@@ -10,7 +10,7 @@ import DefaultLayout from "../layout/default-layout";
 const Pages = (props) => {
 	return <Router>
 		<Switch>
-			<Route path="/" exact>
+			<Route path="/">
 				<DefaultLayout />
 			</Route>
 			<Route path="/app/dashboard" exact>
